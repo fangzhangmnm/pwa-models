@@ -1,0 +1,112 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 25165824,
+   "name": "chunk-000",
+   "sha256": "824858f502e1de50c94f3829dab5f59d5f4159f98413a94fdb44e9bf459b938c"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-001",
+   "sha256": "c7dccbbcfa74ee807e7034ab17523d810d2c49b502320e036a256c2d568bae0e"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-002",
+   "sha256": "033d619e2761734e542743d22d3c3537098c0544df08f04d245066943493ab94"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-003",
+   "sha256": "c74e1dc22409502bb9fe37820bb26c3764ecca0f8bd550cc67125d82edf30061"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-004",
+   "sha256": "5c4dc1a974ae58db05c6569bf163dab53b5ac67a8de6343f9dc6eb6fc0a059ce"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-005",
+   "sha256": "c401dab9fc0ab7d5ae1ba1fe19cd5e7fab0b466d300040f27e2542c1c56bb537"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-006",
+   "sha256": "5f3e4b34b7fe3d04672c040165a9744f2f7f28a4cf7585e38b5be0707dcff448"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-007",
+   "sha256": "738a6f9e84493613af3caaffc5a8e4d9575fc2017d084f03457b3d0d7df8586c"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-008",
+   "sha256": "ceb7324a3a49ea27216573ca184d2f24018535364c12aa00b372c55f53a436f9"
+  },
+  {
+   "bytes": 13057319,
+   "name": "chunk-009",
+   "sha256": "5b06ca2d2cb3bdcad2700fc2646540240bdb009fdcf14533e16dfd50c1c926ad"
+  }
+ ],
+ "createdAt": "2026-09-03",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "sherpa-onnx",
+ "engineConfig": {
+  "decodingMethod": "greedy_search",
+  "modelConfig": {
+   "debug": 0,
+   "numThreads": 1,
+   "provider": "cpu",
+   "senseVoice": {
+    "language": "auto",
+    "model": "model.int8.onnx",
+    "useInverseTextNormalization": 1
+   },
+   "tokens": "tokens.txt"
+  },
+  "type": "offline"
+ },
+ "files": [
+  {
+   "bytes": 239233841,
+   "offset": 0,
+   "path": "model.int8.onnx",
+   "sha256": "c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51"
+  },
+  {
+   "bytes": 315894,
+   "offset": 239233841,
+   "path": "tokens.txt",
+   "sha256": "f449eb28dc567533d7fa59be34e2abca8784f771850c78a47fb731a31429a1dc"
+  }
+ ],
+ "lang": [
+  "zh",
+  "en",
+  "ja",
+  "ko",
+  "yue"
+ ],
+ "license": {
+  "attribution": "SenseVoiceSmall — Alibaba Tongyi Lab / FunAudioLLM (https://github.com/FunAudioLLM/SenseVoice); ONNX int8 export by k2-fsa/sherpa-onnx",
+  "file": "LICENSE.txt",
+  "name": "FunASR Model Open Source License Agreement v1.1",
+  "sha256": "7dba975a2069691db4992b0592d70828b330d2f8a30a71450f4e152a554e84f8"
+ },
+ "name": "SenseVoiceSmall (int8, zh/en/ja/ko/yue, 带标点)",
+ "notes": "2024-07-17 export supports punctuation via useInverseTextNormalization=1 (the 2025-09-09 export does not).",
+ "sha256": "ef1b8a0785649ca43847ccf78a41c3f9dc3755df45f1c348c4c394f6d568b188",
+ "slug": "sense-voice-small-int8-20240717",
+ "source": {
+  "converted": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models",
+  "file": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17.tar.bz2",
+  "model": "https://huggingface.co/FunAudioLLM/SenseVoiceSmall"
+ },
+ "task": "asr",
+ "totalBytes": 239549735,
+ "v": 1
+}

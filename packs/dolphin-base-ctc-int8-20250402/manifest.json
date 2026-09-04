@@ -1,0 +1,85 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 25165824,
+   "name": "chunk-000",
+   "sha256": "57a87adabfc06bc9fd7051e76d47c72e21cf7e2a29e5cce0abcf606ba5263e6f"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-001",
+   "sha256": "a31b12b956c071bd6e358750d2f89a392cb42d45646157857d8b3e7d668bc21d"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-002",
+   "sha256": "c69f3ffb08240365bb1e10eec1fd426c346b4f5cdacca786b52961c652417fb5"
+  },
+  {
+   "bytes": 25165824,
+   "name": "chunk-003",
+   "sha256": "91d3fed57d5e26cb91584fc38ead2ca2cb1121611bfad0699e2007ef1f65ec76"
+  },
+  {
+   "bytes": 3571168,
+   "name": "chunk-004",
+   "sha256": "21615f1e318d46a583109c16ee9a39717db76486217654f9912b8372c6fa6ec5"
+  }
+ ],
+ "createdAt": "2026-09-03",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "sherpa-onnx",
+ "engineConfig": {
+  "decodingMethod": "greedy_search",
+  "modelConfig": {
+   "debug": 0,
+   "dolphin": {
+    "model": "model.int8.onnx"
+   },
+   "numThreads": 1,
+   "provider": "cpu",
+   "tokens": "tokens.txt"
+  },
+  "type": "offline"
+ },
+ "files": [
+  {
+   "bytes": 103729802,
+   "offset": 0,
+   "path": "model.int8.onnx",
+   "sha256": "a3aa46c97f3f60f135ff949793cb05fabe7a0b3c484dc2e3cc699d354ee11b76"
+  },
+  {
+   "bytes": 504662,
+   "offset": 103729802,
+   "path": "tokens.txt",
+   "sha256": "c3788261a51df1899ea4b210b552cd42139204de72c0ad60f6cebb199078872e"
+  }
+ ],
+ "lang": [
+  "zh",
+  "yue",
+  "ja",
+  "ko",
+  "multi"
+ ],
+ "license": {
+  "attribution": "Dolphin — DataoceanAI & Tsinghua University (https://github.com/DataoceanAI/Dolphin); ONNX int8 CTC export by k2-fsa/sherpa-onnx",
+  "file": "LICENSE.txt",
+  "name": "Apache-2.0",
+  "sha256": "252bff52e32f4339afca6e035776043cb96cb611cd02f42eafa6758990cf4c71"
+ },
+ "name": "Dolphin-base CTC (int8, 中文+22 方言+40 语)",
+ "notes": "",
+ "sha256": "0249f43edfd6348600df6eca7110144b6176c716e8af2b36077e40909a4f1e4a",
+ "slug": "dolphin-base-ctc-int8-20250402",
+ "source": {
+  "converted": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models",
+  "file": "sherpa-onnx-dolphin-base-ctc-multi-lang-int8-2025-04-02.tar.bz2",
+  "model": "https://huggingface.co/DataoceanAI/dolphin-base"
+ },
+ "task": "asr",
+ "totalBytes": 104234464,
+ "v": 1
+}

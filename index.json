@@ -1,0 +1,53 @@
+{
+ "v": 1,
+ "packs": [
+  {
+   "slug": "dolphin-base-ctc-int8-20250402",
+   "id": "82bedde5d23cbe2e7c831566340de779d21f9f04b0baf2d1187e848d3ae0a70b",
+   "name": "Dolphin-base CTC (int8, 中文+22 方言+40 语)",
+   "task": "asr",
+   "lang": [
+    "zh",
+    "yue",
+    "ja",
+    "ko",
+    "multi"
+   ],
+   "engine": "sherpa-onnx",
+   "totalBytes": 104234464,
+   "chunks": 5,
+   "license": "Apache-2.0"
+  },
+  {
+   "slug": "sense-voice-small-int8-20240717",
+   "id": "98fc090a072254bc9a0f389321cfc68523e5fa0c53cb70baee2ac8943d63995e",
+   "name": "SenseVoiceSmall (int8, zh/en/ja/ko/yue, 带标点)",
+   "task": "asr",
+   "lang": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "yue"
+   ],
+   "engine": "sherpa-onnx",
+   "totalBytes": 239549735,
+   "chunks": 10,
+   "license": "FunASR Model Open Source License Agreement v1.1"
+  },
+  {
+   "slug": "zipformer-streaming-zh-14M-int8-20230223",
+   "id": "25ffdf47a19d443ce10ab02a8289326f41d341dfc2b2f0bdb65a5a508c36aba6",
+   "name": "Streaming Zipformer zh-14M (int8, 流式, 极限小杯)",
+   "task": "asr",
+   "lang": [
+    "zh"
+   ],
+   "engine": "sherpa-onnx",
+   "totalBytes": 30975688,
+   "chunks": 2,
+   "license": "Apache-2.0"
+  }
+ ],
+ "layout": "packs/<slug>/{manifest.json, chunk-NNN, LICENSE.txt}; id = sha256(manifest.json bytes)"
+}

@@ -1,0 +1,91 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 25165824,
+   "name": "chunk-000",
+   "sha256": "737a723a93f6796b9660f4c1e1d48a94672cd5a562119cd2f320d1e6752c1ba5"
+  },
+  {
+   "bytes": 5809864,
+   "name": "chunk-001",
+   "sha256": "a71dd79e162562b8b049c38ff7028352b5d9f2377b7cc85d0e2ad86e719c436d"
+  }
+ ],
+ "createdAt": "2026-09-03",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "sherpa-onnx",
+ "engineConfig": {
+  "decodingMethod": "greedy_search",
+  "enableEndpoint": 1,
+  "featConfig": {
+   "featureDim": 80,
+   "sampleRate": 16000
+  },
+  "maxActivePaths": 4,
+  "modelConfig": {
+   "debug": 0,
+   "modelType": "zipformer",
+   "modelingUnit": "cjkchar",
+   "numThreads": 1,
+   "provider": "cpu",
+   "tokens": "tokens.txt",
+   "transducer": {
+    "decoder": "decoder.onnx",
+    "encoder": "encoder.int8.onnx",
+    "joiner": "joiner.int8.onnx"
+   }
+  },
+  "rule1MinTrailingSilence": 2.4,
+  "rule2MinTrailingSilence": 1.2,
+  "rule3MinUtteranceLength": 20,
+  "type": "online"
+ },
+ "files": [
+  {
+   "bytes": 21621684,
+   "offset": 0,
+   "path": "encoder.int8.onnx",
+   "sha256": "1c556ea57cec304e55ec4b72e52c1cc098bb01476ed7d90f3de939fe126487b1"
+  },
+  {
+   "bytes": 7509745,
+   "offset": 21621684,
+   "path": "decoder.onnx",
+   "sha256": "5ee0f03a2768ff1d5c83ef3a493243c7935d316cd41280037b14783a3467cc78"
+  },
+  {
+   "bytes": 1795562,
+   "offset": 29131429,
+   "path": "joiner.int8.onnx",
+   "sha256": "a7cf9d82757bdcf786059454495a9ca95e4bd7347f72473fc08d794475c36169"
+  },
+  {
+   "bytes": 48697,
+   "offset": 30926991,
+   "path": "tokens.txt",
+   "sha256": "8b294db9045d6e5f94647f4c1eec1af4da143a75053c399611444b378ff966ac"
+  }
+ ],
+ "lang": [
+  "zh"
+ ],
+ "license": {
+  "attribution": "k2-fsa / icefall streaming zipformer zh-14M (https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23, license tag apache-2.0)",
+  "file": "LICENSE.txt",
+  "name": "Apache-2.0",
+  "sha256": "252bff52e32f4339afca6e035776043cb96cb611cd02f42eafa6758990cf4c71"
+ },
+ "name": "Streaming Zipformer zh-14M (int8, 流式, 极限小杯)",
+ "notes": "",
+ "sha256": "fc322cc6b4b531cffe4f6c1f0494e0c8f38b0b85521f2f8fc76a8e4fc2aae239",
+ "slug": "zipformer-streaming-zh-14M-int8-20230223",
+ "source": {
+  "converted": "https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models",
+  "file": "sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23.tar.bz2",
+  "model": "https://huggingface.co/csukuangfj/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23"
+ },
+ "task": "asr",
+ "totalBytes": 30975688,
+ "v": 1
+}
