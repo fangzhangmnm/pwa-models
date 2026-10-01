@@ -35,9 +35,9 @@
  "terms": "つくよみちゃんの声質を使用する場合は、出力した音声を次の目的で使用することを禁止します。\n【禁止事項】\n■人を批判・攻撃すること。（「批判・攻撃」の定義は、つくよみちゃんキャラクターライセンスに準じます）\n■特定の政治的立場・宗教・思想への賛同または反対を呼びかけること。\n■刺激の強い表現をゾーニングなしで公開すること。\n■他者に対して二次利用（素材としての利用）を許可する形で公開すること。",
  "termsUrl": "https://tyc.rei-yumesaki.net/material/corpus/",
  "attribution": [
-  "音色模型：ayousanz/piper-plus-tsukuyomi-chan（つくよみちゃんコーパス利用規約）",
-  "基础模型：ayousanz/piper-plus-base（CC-BY-4.0）",
-  "日语前端：Open JTalk / MeCab / NAIST-jdic / pyopenjtalk-plus；英语：CMUdict、g2p-en；中文：pypinyin；运行时：ONNX Runtime"
+  "ayousanz/piper-plus-tsukuyomi-chan — つくよみちゃんコーパス利用規約",
+  "ayousanz/piper-plus-base — CC-BY-4.0",
+  "Open JTalk · MeCab · NAIST-jdic · pyopenjtalk-plus · CMUdict · g2p-en · pypinyin · ONNX Runtime"
  ],
  "notes": "ja is the trained language (11 minutes of Japanese); en / zh are cross-lingual transfer with a Japanese accent. es / fr / pt are in the model but have no text frontend here.",
  "createdAt": "2026-10-01",

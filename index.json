@@ -126,7 +126,7 @@
    "name": "つくよみちゃん",
    "engine": "piper-plus",
    "file": "voices/tsukuyomi-chan.json",
-   "sha256": "bfa2150bb9bc5a91d59ca974787d17c2b7293fa0d29905734642cd2ceccb8610",
+   "sha256": "c37bdbf293319828288661eca689eea839929f36086e20d0ddf4cb7a9ae0dbb3",
    "packs": [
     "voice-tsukuyomi-chan-6lang-fp16-20260613",
     "runtime-onnxruntime-web-1.30.0-20261001"
