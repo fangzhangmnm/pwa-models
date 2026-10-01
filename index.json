@@ -19,6 +19,58 @@
    "license": "Apache-2.0"
   },
   {
+   "slug": "lang-en-cmudict-20261001",
+   "id": "e54e7243870cef39d5015a51fe7fc57917da946908223a3d5baa5cab85956226",
+   "name": "英语发音词典（CMUdict + 同形异音表）",
+   "task": "tts-frontend",
+   "lang": [
+    "en"
+   ],
+   "engine": "piper-plus",
+   "totalBytes": 868090,
+   "chunks": 1,
+   "license": "BSD-2-Clause style (CMU Pronouncing Dictionary) + Apache-2.0 (g2p-en homographs)"
+  },
+  {
+   "slug": "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001",
+   "id": "b66632d8ab153a865e2727d745794da248a9c748558920bfd004443cdb9f2d4c",
+   "name": "日语文本前端（OpenJTalk + pyopenjtalk-plus 词典）",
+   "task": "tts-frontend",
+   "lang": [
+    "ja"
+   ],
+   "engine": "piper-plus",
+   "totalBytes": 24471527,
+   "chunks": 1,
+   "license": "Modified BSD (Open JTalk) + BSD (MeCab) + BSD-3-Clause style (NAIST-jdic / Open JTalk dictionary) + MIT (pyopenjtalk-plus)"
+  },
+  {
+   "slug": "lang-zh-pinyin-20261001",
+   "id": "a84c73d781c805a65b73deb3b39ac9f5fedd15f0cdf3d66b925005c8152af9e3",
+   "name": "中文拼音词典（pypinyin 数据）",
+   "task": "tts-frontend",
+   "lang": [
+    "zh"
+   ],
+   "engine": "piper-plus",
+   "totalBytes": 686220,
+   "chunks": 1,
+   "license": "MIT (pypinyin / pinyin-data / phrase-pinyin-data)"
+  },
+  {
+   "slug": "runtime-onnxruntime-web-1.30.0-20261001",
+   "id": "f76668f9383b922aef483f4c0a374fb727b9a9203d230cb2fceabb34fc4459be",
+   "name": "onnxruntime-web 1.30.0（WASM 推理运行时，单线程 SIMD）",
+   "task": "runtime",
+   "lang": [
+    ""
+   ],
+   "engine": "onnxruntime-web",
+   "totalBytes": 3687160,
+   "chunks": 1,
+   "license": "MIT (Microsoft, onnxruntime)"
+  },
+  {
    "slug": "sense-voice-small-int8-20240717",
    "id": "98fc090a072254bc9a0f389321cfc68523e5fa0c53cb70baee2ac8943d63995e",
    "name": "SenseVoiceSmall (int8, zh/en/ja/ko/yue, 带标点)",
@@ -36,6 +88,24 @@
    "license": "FunASR Model Open Source License Agreement v1.1"
   },
   {
+   "slug": "voice-tsukuyomi-chan-6lang-fp16-20260613",
+   "id": "f4b6a4cdc638612edfb4a2d1fbb8c062486620b276e500f17d47a1b17704087c",
+   "name": "つくよみちゃん（piper-plus 六语单音色，fp16）",
+   "task": "tts",
+   "lang": [
+    "ja",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "pt"
+   ],
+   "engine": "piper-plus",
+   "totalBytes": 39659618,
+   "chunks": 2,
+   "license": "つくよみちゃんコーパス利用規約（model card: license other / tsukuyomi-chan-corpus）+ base model CC-BY-4.0"
+  },
+  {
    "slug": "zipformer-streaming-zh-14M-int8-20230223",
    "id": "25ffdf47a19d443ce10ab02a8289326f41d341dfc2b2f0bdb65a5a508c36aba6",
    "name": "Streaming Zipformer zh-14M (int8, 流式, 极限小杯)",
@@ -49,5 +119,29 @@
    "license": "Apache-2.0"
   }
  ],
- "layout": "packs/<slug>/{manifest.json, chunk-NNN, LICENSE.txt}; id = sha256(manifest.json bytes)"
+ "layout": "packs/<slug>/{manifest.json, chunk-NNN, LICENSE.txt}; id = sha256(manifest.json bytes)",
+ "voices": [
+  {
+   "id": "tsukuyomi-chan",
+   "name": "つくよみちゃん",
+   "engine": "piper-plus",
+   "file": "voices/tsukuyomi-chan.json",
+   "sha256": "bfa2150bb9bc5a91d59ca974787d17c2b7293fa0d29905734642cd2ceccb8610",
+   "packs": [
+    "voice-tsukuyomi-chan-6lang-fp16-20260613",
+    "runtime-onnxruntime-web-1.30.0-20261001"
+   ],
+   "langPacks": {
+    "ja": [
+     "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001"
+    ],
+    "en": [
+     "lang-en-cmudict-20261001"
+    ],
+    "zh": [
+     "lang-zh-pinyin-20261001"
+    ]
+   }
+  }
+ ]
 }

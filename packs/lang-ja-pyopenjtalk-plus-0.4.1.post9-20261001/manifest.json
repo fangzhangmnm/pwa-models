@@ -1,0 +1,76 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 24471527,
+   "name": "chunk-000",
+   "sha256": "3e1d7f8ff18204a56d4170da09258cf655bb01bb61114bcd84e8bb2441941b60"
+  }
+ ],
+ "createdAt": "2026-10-01",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "piper-plus",
+ "engineConfig": {
+  "kind": "text-frontend",
+  "lang": "ja"
+ },
+ "files": [
+  {
+   "bytes": 22438129,
+   "offset": 0,
+   "path": "ja/sys.dic.gz",
+   "sha256": "b1804e8c2e6244bb36c7c24eb5af9d4307a80acfb481dcffdc71c7aa60ede055"
+  },
+  {
+   "bytes": 1867237,
+   "offset": 22438129,
+   "path": "ja/matrix.bin.gz",
+   "sha256": "824f60e50360fb2b186b16d1fe5fd6312919f03c33a73bc86ece37a301b3f0b8"
+  },
+  {
+   "bytes": 643,
+   "offset": 24305366,
+   "path": "ja/char.bin.gz",
+   "sha256": "335d6f4a6c6cd50ab1d0782dbf6b13ab9e2bed08ed1fd34c97d499d4a05fb665"
+  },
+  {
+   "bytes": 782,
+   "offset": 24306009,
+   "path": "ja/unk.dic.gz",
+   "sha256": "03721395b79e257fbd2b0e742a4faaed6073ecb79b0cf615fbe352995581b603"
+  },
+  {
+   "bytes": 147207,
+   "offset": 24306791,
+   "path": "ja/ojt.wasm.gz",
+   "sha256": "97a8738abbdc773b4785b1f6ba849c432a5764cf13c1637df4da630a82f45f8a"
+  },
+  {
+   "bytes": 17529,
+   "offset": 24453998,
+   "path": "ja/nani-model.json.gz",
+   "sha256": "0427c6cfe53f6c4d771f6c3e50fea06ddeaac96f5e24bdab4f49493395c9630a"
+  }
+ ],
+ "lang": [
+  "ja"
+ ],
+ "license": {
+  "attribution": "Open JTalk (Nagoya Institute of Technology); MeCab (Taku Kudo, NTT); NAIST Japanese Dictionary; pyopenjtalk / pyopenjtalk-plus (tsukumijima et al.)",
+  "file": "LICENSE.txt",
+  "name": "Modified BSD (Open JTalk) + BSD (MeCab) + BSD-3-Clause style (NAIST-jdic / Open JTalk dictionary) + MIT (pyopenjtalk-plus)",
+  "sha256": "b8dd3d66249df450fc71f3f8f8f29da02b5b01b8b47c03f412af8bc16090c1bb"
+ },
+ "name": "日语文本前端（OpenJTalk + pyopenjtalk-plus 词典）",
+ "notes": "ojt.wasm is an engine binary built on 2026-10-01 from the upstream sources (wrapper source: backend/vendor/ojt/ojt_wasm.c). 160 MB initial heap.",
+ "sha256": "3e1d7f8ff18204a56d4170da09258cf655bb01bb61114bcd84e8bb2441941b60",
+ "slug": "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001",
+ "source": {
+  "converted": "",
+  "file": "dictionary: wheel pyopenjtalk/dictionary/; ojt.wasm: built from the sdist (sha256 cdcb0746659857554c6dad23956cad77e21f76c9f3dfa000ea2f8d4f0ba11d99) with Emscripten 6.0.10; nani-model.json: exported from pyopenjtalk/yomi_model/",
+  "model": "https://pypi.org/project/pyopenjtalk-plus/0.4.1.post9/"
+ },
+ "task": "tts-frontend",
+ "totalBytes": 24471527,
+ "v": 1
+}

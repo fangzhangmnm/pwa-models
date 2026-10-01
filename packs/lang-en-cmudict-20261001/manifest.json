@@ -1,0 +1,52 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 868090,
+   "name": "chunk-000",
+   "sha256": "21dc3f65ea440c904746ee1ee59a2e24c88aaf0696b1450b0aedcc001aca1926"
+  }
+ ],
+ "createdAt": "2026-10-01",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "piper-plus",
+ "engineConfig": {
+  "kind": "text-frontend",
+  "lang": "en"
+ },
+ "files": [
+  {
+   "bytes": 863232,
+   "offset": 0,
+   "path": "en/cmudict_data.json.gz",
+   "sha256": "3083a0cf26e01398a6877c8834150f03a230baf6965832b00bfae699063208f4"
+  },
+  {
+   "bytes": 4858,
+   "offset": 863232,
+   "path": "en/homographs.json.gz",
+   "sha256": "2ef14b6d49476790fdb2008150d417cb9069f7dcb74c25706a43bcc3fe5c4187"
+  }
+ ],
+ "lang": [
+  "en"
+ ],
+ "license": {
+  "attribution": "CMU Pronouncing Dictionary (Carnegie Mellon University); g2p-en (Kyubyong Park & Jongseok Kim)",
+  "file": "LICENSE.txt",
+  "name": "BSD-2-Clause style (CMU Pronouncing Dictionary) + Apache-2.0 (g2p-en homographs)",
+  "sha256": "3d3a944042879fa3c5a25c317ea7e609c0efa7cf0900c0c298ba331953c27039"
+ },
+ "name": "英语发音词典（CMUdict + 同形异音表）",
+ "notes": "homographs.json is a format conversion of g2p-en's homographs.en (Apache-2.0 §4: modified file notice).",
+ "sha256": "21dc3f65ea440c904746ee1ee59a2e24c88aaf0696b1450b0aedcc001aca1926",
+ "slug": "lang-en-cmudict-20261001",
+ "source": {
+  "converted": "",
+  "file": "cmudict_data.json: piper-plus 82ee4e7 src/rust/piper-plus-g2p/data/; homographs.json: PyPI g2p-en 2.1.0 g2p_en/homographs.en converted to JSON (content unchanged)",
+  "model": "https://github.com/ayutaz/piper-plus"
+ },
+ "task": "tts-frontend",
+ "totalBytes": 868090,
+ "v": 1
+}

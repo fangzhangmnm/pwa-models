@@ -1,0 +1,46 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 3687160,
+   "name": "chunk-000",
+   "sha256": "09e7a4d1376f589d6f6d4005d49db7d33b707175acb13e475c8a47858efdf788"
+  }
+ ],
+ "createdAt": "2026-10-01",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "onnxruntime-web",
+ "engineConfig": {
+  "kind": "wasm-runtime",
+  "version": "1.30.0"
+ },
+ "files": [
+  {
+   "bytes": 3687160,
+   "offset": 0,
+   "path": "ort-wasm-simd-threaded.wasm.gz",
+   "sha256": "09e7a4d1376f589d6f6d4005d49db7d33b707175acb13e475c8a47858efdf788"
+  }
+ ],
+ "lang": [
+  ""
+ ],
+ "license": {
+  "attribution": "ONNX Runtime (Microsoft)",
+  "file": "LICENSE.txt",
+  "name": "MIT (Microsoft, onnxruntime)",
+  "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+ },
+ "name": "onnxruntime-web 1.30.0（WASM 推理运行时，单线程 SIMD）",
+ "notes": "Engine binary. The matching JS glue (ort.wasm.bundle.min.mjs) is vendored in the app, not in this pack.",
+ "sha256": "09e7a4d1376f589d6f6d4005d49db7d33b707175acb13e475c8a47858efdf788",
+ "slug": "runtime-onnxruntime-web-1.30.0-20261001",
+ "source": {
+  "converted": "",
+  "file": "dist/ort-wasm-simd-threaded.wasm (unmodified)",
+  "model": "https://www.npmjs.com/package/onnxruntime-web/v/1.30.0"
+ },
+ "task": "runtime",
+ "totalBytes": 3687160,
+ "v": 1
+}

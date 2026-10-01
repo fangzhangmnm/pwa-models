@@ -1,0 +1,52 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 686220,
+   "name": "chunk-000",
+   "sha256": "acad023c61ddf4ed42720c63be1b35737cff734cbf4a6c8ab671b50f7fe39ae1"
+  }
+ ],
+ "createdAt": "2026-10-01",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "piper-plus",
+ "engineConfig": {
+  "kind": "text-frontend",
+  "lang": "zh"
+ },
+ "files": [
+  {
+   "bytes": 186217,
+   "offset": 0,
+   "path": "zh/pinyin_single.tone3.json.gz",
+   "sha256": "ec5c44ed3cd18eda41a04a7831f8d069600cdfb19e55e5b001a42bbdf3a4ad82"
+  },
+  {
+   "bytes": 500003,
+   "offset": 186217,
+   "path": "zh/pinyin_phrases.tone3.json.gz",
+   "sha256": "43dd0534a63c6bddb4c0f20ee88f19f5933875ff3979acc777652028a66f5ba8"
+  }
+ ],
+ "lang": [
+  "zh"
+ ],
+ "license": {
+  "attribution": "pypinyin, pinyin-data, phrase-pinyin-data (mozillazg)",
+  "file": "LICENSE.txt",
+  "name": "MIT (pypinyin / pinyin-data / phrase-pinyin-data)",
+  "sha256": "82783f291266e986df7494586db072217e2940227f93208f4f920a53b7a7d91e"
+ },
+ "name": "中文拼音词典（pypinyin 数据）",
+ "notes": "Tone marks converted to tone-number style (the form the model's phoneme table expects).",
+ "sha256": "acad023c61ddf4ed42720c63be1b35737cff734cbf4a6c8ab671b50f7fe39ae1",
+ "slug": "lang-zh-pinyin-20261001",
+ "source": {
+  "converted": "",
+  "file": "piper-plus 82ee4e7 src/rust/piper-plus-g2p/data/pinyin_{single,phrases}.json, tone marks converted to tone numbers",
+  "model": "https://github.com/ayutaz/piper-plus"
+ },
+ "task": "tts-frontend",
+ "totalBytes": 686220,
+ "v": 1
+}

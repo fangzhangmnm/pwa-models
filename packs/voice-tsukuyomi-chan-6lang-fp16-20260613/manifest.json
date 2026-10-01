@@ -1,0 +1,63 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 25165824,
+   "name": "chunk-000",
+   "sha256": "cd86f0b9dbb1cfd83204fe753eb9801c3f0651b405b4d447e99819afd06c810a"
+  },
+  {
+   "bytes": 14493794,
+   "name": "chunk-001",
+   "sha256": "f4874b93ce3553c63eb3fb100ad4d44e5568d9aabc5dc9cb7f557d249028fb99"
+  }
+ ],
+ "createdAt": "2026-10-01",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "piper-plus",
+ "engineConfig": {
+  "kind": "piper-plus-voice",
+  "sampleRate": 22050,
+  "speakers": 1
+ },
+ "files": [
+  {
+   "bytes": 39652717,
+   "offset": 0,
+   "path": "model.onnx",
+   "sha256": "5289e9b6eaf21080803b7fe1c4dc85b5491d4c216121207a41df18dd5f68e5d7"
+  },
+  {
+   "bytes": 6901,
+   "offset": 39652717,
+   "path": "config.json",
+   "sha256": "516058f405ec914140f34832a9d8bb5d8272ba62af9bc7ffb29349715a539780"
+  }
+ ],
+ "lang": [
+  "ja",
+  "en",
+  "zh",
+  "es",
+  "fr",
+  "pt"
+ ],
+ "license": {
+  "attribution": "つくよみちゃんコーパス（CV.夢前黎）https://tyc.rei-yumesaki.net/material/corpus/ ；model: ayousanz/piper-plus-tsukuyomi-chan, fine-tuned from ayousanz/piper-plus-base (CC-BY-4.0)",
+  "file": "LICENSE.txt",
+  "name": "つくよみちゃんコーパス利用規約（model card: license other / tsukuyomi-chan-corpus）+ base model CC-BY-4.0",
+  "sha256": "b32f27261055fd0c0a3174614743ee1d045af730510bdb00b90bc0bc4fd400bf"
+ },
+ "name": "つくよみちゃん（piper-plus 六语单音色，fp16）",
+ "notes": "Weights and config only, byte-identical to upstream. Needs a runtime pack (onnxruntime-web) and one text-frontend pack per language. The credit block and the four prohibited uses in LICENSE.txt must be shown in the product UI.",
+ "sha256": "6a4465f457e324209a434a1eca89c084df6ccd43f835fdf20682510815a86c3e",
+ "slug": "voice-tsukuyomi-chan-6lang-fp16-20260613",
+ "source": {
+  "converted": "",
+  "file": "tsukuyomi-chan-6lang-fp16.onnx + config.json @ revision 36b59c825c36bd386b8960cf3f604382f52f2a87 (2026-06-13)",
+  "model": "https://huggingface.co/ayousanz/piper-plus-tsukuyomi-chan"
+ },
+ "task": "tts",
+ "totalBytes": 39659618,
+ "v": 1
+}
