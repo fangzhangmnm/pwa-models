@@ -106,6 +106,24 @@
    "license": "つくよみちゃんコーパス利用規約（model card: license other / tsukuyomi-chan-corpus）+ base model CC-BY-4.0"
   },
   {
+   "slug": "voice-tsukuyomi-chan-zhen-6lang-fp16-20261002",
+   "id": "573d6d418065d8cfb345f146b8b1c4bbed2f90ca7217a1142666ab4c1c71615d",
+   "name": "月读（中英增强）— つくよみちゃん piper-plus 六语单音色，fp16，中英改读底模的语言向量",
+   "task": "tts",
+   "lang": [
+    "ja",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "pt"
+   ],
+   "engine": "piper-plus",
+   "totalBytes": 39668909,
+   "chunks": 2,
+   "license": "つくよみちゃんコーパス利用規約（衍生模型；model card: license other / tsukuyomi-chan-corpus）+ base model CC-BY-4.0"
+  },
+  {
    "slug": "zipformer-streaming-zh-14M-int8-20230223",
    "id": "25ffdf47a19d443ce10ab02a8289326f41d341dfc2b2f0bdb65a5a508c36aba6",
    "name": "Streaming Zipformer zh-14M (int8, 流式, 极限小杯)",
@@ -125,10 +143,34 @@
    "id": "tsukuyomi-chan",
    "name": "つくよみちゃん",
    "engine": "piper-plus",
-   "file": "voices/tsukuyomi-chan.json",
+   "file": "voices/sunset/tsukuyomi-chan.json",
    "sha256": "c37bdbf293319828288661eca689eea839929f36086e20d0ddf4cb7a9ae0dbb3",
    "packs": [
     "voice-tsukuyomi-chan-6lang-fp16-20260613",
+    "runtime-onnxruntime-web-1.30.0-20261001"
+   ],
+   "langPacks": {
+    "ja": [
+     "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001"
+    ],
+    "en": [
+     "lang-en-cmudict-20261001"
+    ],
+    "zh": [
+     "lang-zh-pinyin-20261001"
+    ]
+   },
+   "sunset": "2026-10-02",
+   "replacedBy": "tsukuyomi-chan-zhen"
+  },
+  {
+   "id": "tsukuyomi-chan-zhen",
+   "name": "月读（中英增强）",
+   "engine": "piper-plus",
+   "file": "voices/tsukuyomi-chan-zhen.json",
+   "sha256": "373d3812840a49cc09aa964f57279d72808a2a54f54c8db261763c4cb04d60e3",
+   "packs": [
+    "voice-tsukuyomi-chan-zhen-6lang-fp16-20261002",
     "runtime-onnxruntime-web-1.30.0-20261001"
    ],
    "langPacks": {

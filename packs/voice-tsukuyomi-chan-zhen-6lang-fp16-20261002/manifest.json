@@ -1,0 +1,63 @@
+{
+ "chunkBytes": 25165824,
+ "chunks": [
+  {
+   "bytes": 25165824,
+   "name": "chunk-000",
+   "sha256": "1e1ec907abcb1bcc9daf37726ee969511c5828dbac06c4fada23119941b94e06"
+  },
+  {
+   "bytes": 14503085,
+   "name": "chunk-001",
+   "sha256": "384855c4a0a9f9e4c9e7f04b2e3632ddddbf1698af7db64f74399d4418f026f9"
+  }
+ ],
+ "createdAt": "2026-10-02",
+ "createdBy": "tools/pack.py (Claude Fable 5.1)",
+ "engine": "piper-plus",
+ "engineConfig": {
+  "kind": "piper-plus-voice",
+  "sampleRate": 22050,
+  "speakers": 1
+ },
+ "files": [
+  {
+   "bytes": 39662580,
+   "offset": 0,
+   "path": "model.onnx",
+   "sha256": "ae7ab68a3c613b6b33b78136518056dacb5f4ef0dba7e75998e01e7474e53a14"
+  },
+  {
+   "bytes": 6329,
+   "offset": 39662580,
+   "path": "config.json",
+   "sha256": "f6a373726beef08f9094e97f434185b1f9840b76ced0a73281fc40023b02d02d"
+  }
+ ],
+ "lang": [
+  "ja",
+  "en",
+  "zh",
+  "es",
+  "fr",
+  "pt"
+ ],
+ "license": {
+  "attribution": "つくよみちゃんコーパス（CV.夢前黎）https://tyc.rei-yumesaki.net/material/corpus/ ；model: derivative of ayousanz/piper-plus-tsukuyomi-chan; zh/en language vectors from ayousanz/piper-plus-base (CC-BY-4.0)",
+  "file": "LICENSE.txt",
+  "name": "つくよみちゃんコーパス利用規約（衍生模型；model card: license other / tsukuyomi-chan-corpus）+ base model CC-BY-4.0",
+  "sha256": "509515f26071b3d6a38807963ad8ece86242593aabe26043f4188501849ffd1e"
+ },
+ "name": "月读（中英增强）— つくよみちゃん piper-plus 六语单音色，fp16，中英改读底模的语言向量",
+ "notes": "Modified model (see LICENSE.txt §[4]). Needs the runtime pack (onnxruntime-web) and one text-frontend pack per language. The credit block and the four prohibited uses must be shown in the product UI.",
+ "sha256": "927f0dbf503e1a2e5db1238d8d758c52d5f6973d7b3b8bccddd664d6a9ee1cbf",
+ "slug": "voice-tsukuyomi-chan-zhen-6lang-fp16-20261002",
+ "source": {
+  "converted": "preset input: language-vector routing per module + speed factor with dp (see LICENSE.txt §[4]); config + preset_default",
+  "file": "tsukuyomi-chan-6lang-fp16.onnx @ 36b59c825c36bd386b8960cf3f604382f52f2a87 + piper-plus-base model.ckpt @ ce006e5da7 (emb_lang rows); config.json = source + preset_default",
+  "model": "https://huggingface.co/ayousanz/piper-plus-tsukuyomi-chan"
+ },
+ "task": "tts",
+ "totalBytes": 39668909,
+ "v": 1
+}

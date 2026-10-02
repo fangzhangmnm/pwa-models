@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "id": "tsukuyomi-chan",
+ "name": "つくよみちゃん",
+ "engine": "piper-plus",
+ "packs": [
+  "voice-tsukuyomi-chan-6lang-fp16-20260613",
+  "runtime-onnxruntime-web-1.30.0-20261001"
+ ],
+ "langPacks": {
+  "ja": [
+   "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001"
+  ],
+  "en": [
+   "lang-en-cmudict-20261001"
+  ],
+  "zh": [
+   "lang-zh-pinyin-20261001"
+  ]
+ },
+ "packIds": {
+  "voice-tsukuyomi-chan-6lang-fp16-20260613": "f4b6a4cdc638612edfb4a2d1fbb8c062486620b276e500f17d47a1b17704087c",
+  "lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001": "b66632d8ab153a865e2727d745794da248a9c748558920bfd004443cdb9f2d4c",
+  "lang-en-cmudict-20261001": "e54e7243870cef39d5015a51fe7fc57917da946908223a3d5baa5cab85956226",
+  "lang-zh-pinyin-20261001": "a84c73d781c805a65b73deb3b39ac9f5fedd15f0cdf3d66b925005c8152af9e3",
+  "runtime-onnxruntime-web-1.30.0-20261001": "f76668f9383b922aef483f4c0a374fb727b9a9203d230cb2fceabb34fc4459be"
+ },
+ "speakers": [
+  {
+   "id": 0,
+   "name": "つくよみちゃん"
+  }
+ ],
+ "credit": "本ソフトウェアの音声合成には、フリー素材キャラクター「つくよみちゃん」（© Rei Yumesaki）が無料公開している音声データを使用しています。\n■つくよみちゃんコーパス（CV.夢前黎）\nhttps://tyc.rei-yumesaki.net/material/corpus/",
+ "terms": "つくよみちゃんの声質を使用する場合は、出力した音声を次の目的で使用することを禁止します。\n【禁止事項】\n■人を批判・攻撃すること。（「批判・攻撃」の定義は、つくよみちゃんキャラクターライセンスに準じます）\n■特定の政治的立場・宗教・思想への賛同または反対を呼びかけること。\n■刺激の強い表現をゾーニングなしで公開すること。\n■他者に対して二次利用（素材としての利用）を許可する形で公開すること。",
+ "termsUrl": "https://tyc.rei-yumesaki.net/material/corpus/",
+ "attribution": [
+  "ayousanz/piper-plus-tsukuyomi-chan — つくよみちゃんコーパス利用規約",
+  "ayousanz/piper-plus-base — CC-BY-4.0",
+  "Open JTalk · MeCab · NAIST-jdic · pyopenjtalk-plus · CMUdict · g2p-en · pypinyin · ONNX Runtime"
+ ],
+ "notes": "ja is the trained language (11 minutes of Japanese); en / zh are cross-lingual transfer with a Japanese accent. es / fr / pt are in the model but have no text frontend here.",
+ "createdAt": "2026-10-01",
+ "createdBy": "backend/build-packs.mjs (Claude Fable 5.1)"
+}

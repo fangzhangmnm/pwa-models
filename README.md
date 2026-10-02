@@ -39,11 +39,13 @@ voices/<id>.json                 # 音色定义：一个音色由哪几个包组
 
 | 音色 | 由哪些包组成 | 下载 |
 |---|---|---|
-| `tsukuyomi-chan` つくよみちゃん（日 / 英 / 中；日语是训练语言，英 / 中是带日语口音的迁移） | `voice-tsukuyomi-chan-6lang-fp16-20260613` + `runtime-onnxruntime-web-1.30.0-20261001`；日语 `lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001`；英语 `lang-en-cmudict-20261001`；中文 `lang-zh-pinyin-20261001` | 66.2 MB（37.8 + 3.5 + 23.3 + 0.8 + 0.7） |
+| `tsukuyomi-chan-zhen` 月读（中英增强）（日 / 英 / 中；つくよみちゃん 的衍生模型，带预设输入：0x0–0xF 每一位让一个模块（时长 / 文本编码器 / 流 / 解码器）改读 piper-plus-base 的语言向量，时长那位开时提速 1.5 倍；config 的 `preset_default` = 中文 3、英文 9，日文默认 0 = 原版逐采样相同） | `voice-tsukuyomi-chan-zhen-6lang-fp16-20261002` + `runtime-onnxruntime-web-1.30.0-20261001`；日语 `lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001`、英语 `lang-en-cmudict-20261001`、中文 `lang-zh-pinyin-20261001`（后四个和原版共用） | 权重 37.8 MB + 共用包 |
+| ~~`tsukuyomi-chan`~~ つくよみちゃん（**2026-10-02 sunset**，由 `tsukuyomi-chan-zhen` 取代；音色定义挪到 `voices/sunset/`，包按「只增」留着）（日 / 英 / 中；日语是训练语言，英 / 中是带日语口音的迁移） | `voice-tsukuyomi-chan-6lang-fp16-20260613` + `runtime-onnxruntime-web-1.30.0-20261001`；日语 `lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001`；英语 `lang-en-cmudict-20261001`；中文 `lang-zh-pinyin-20261001` | 66.2 MB（37.8 + 3.5 + 23.3 + 0.8 + 0.7） |
 
 | slug | 内容 | 许可 | 出处 |
 |---|---|---|---|
 | `voice-tsukuyomi-chan-6lang-fp16-20260613` | piper-plus 六语单音色模型（MB-iSTFT-VITS2，fp16）+ config，字节同上游 | **つくよみちゃんコーパス利用規約**（必须显示署名块和四条禁止用途，见包内 LICENSE.txt 与 `voices/tsukuyomi-chan.json`）；基础模型 CC-BY-4.0 | https://huggingface.co/ayousanz/piper-plus-tsukuyomi-chan @ `36b59c82`（2026-06-13） |
+| `voice-tsukuyomi-chan-zhen-6lang-fp16-20261002` | 月读（中英增强）：つくよみちゃん 的权重 + 预设输入（每一位一个模块读 piper-plus-base 的语言向量；日文的「另一边」是它的中文行）+ 时长那位开时模型内提速 1.5 倍；config = 原版 + `"preset_default": { "zh": 3, "en": 9 }` | **つくよみちゃんコーパス利用規約**（衍生模型；必须显示署名块和四条禁止用途；改了什么见包内 LICENSE.txt §[4]）+ piper-plus-base CC-BY-4.0 | ayousanz/piper-plus-tsukuyomi-chan @ `36b59c8` + ayousanz/piper-plus-base @ `ce006e5`（emb_lang 两行）；做法 piper-plus `langemb-exp/make_zhen.py`（2026-10-02，Claude Opus 5.5） |
 | `lang-ja-pyopenjtalk-plus-0.4.1.post9-20261001` | OpenJTalk 文本前端：自编 wasm（Emscripten）+ pyopenjtalk-plus 词典 + 读音模型 | Modified BSD（Open JTalk）+ BSD（MeCab）+ BSD-3 式（NAIST-jdic）+ MIT（pyopenjtalk-plus） | https://pypi.org/project/pyopenjtalk-plus/0.4.1.post9/ |
 | `lang-en-cmudict-20261001` | CMU 发音词典 + 同形异音表（JSON） | BSD-2 式（CMUdict）+ Apache-2.0（g2p-en，格式转换过） | piper-plus `82ee4e7`、g2p-en 2.1.0 |
 | `lang-zh-pinyin-20261001` | 单字 / 词组拼音表（声调数字式） | MIT（pypinyin / pinyin-data / phrase-pinyin-data） | piper-plus `82ee4e7`（声调标记转成了数字） |
